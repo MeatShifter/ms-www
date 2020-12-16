@@ -1,0 +1,264 @@
+:root {
+    /* define fonts */
+    --font-menu: 'Font Awesome Brands';
+    --font-main: 'Source Sans Pro', sans-serif;
+    --font-alt: ;
+    --font-h1: 'Fugaz One', cursive;
+  
+  
+    /* define colors */
+    --primary:            #541388;
+    --primary-alt:        #dc1975;
+    --secondary:          #00a29a;
+    --secondary-alt:      #018786;
+    --complement:         #90ee02;
+    --complement-alt:     #ee6002;
+  
+    --background:         #080808;
+    --background-alt:     #4f4e4d;
+    
+    --text:               #e5dfdd;
+    --text-alt:           #000000;    
+    --error:   	          #B00020;
+  }
+
+  /* Mobile first queries */
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+
+/* Utility Classes */
+
+/* Make element full width */
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box; }
+
+/* Make sure elements don't run outside containers (great for images in columns) */
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box; }
+
+/* Float either direction */
+.u-pull-right {
+  float: right; }
+.u-pull-left {
+  float: left; }
+
+/* Clear a float */
+.u-cf {
+  content: "";
+  display: table;
+  clear: both; }
+
+  body {
+    font-family: var(--font-main);
+    background-color: var(--background);
+  }
+  
+  .banner {
+    position: fixed;
+    font-family: var(--font-menu);
+    background-color: var(--primary);
+    color:  var(--text);
+    width: 100%;
+    max-height: 25px;
+    top: 0;
+    left: 0;
+  }
+  
+  
+  h1 {
+    color: var(--text);
+    font-family: var(--font-h1);
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.15em var(--text-alt);
+    padding-top: 4rem;
+  }
+  
+  .paragraph {
+    border-radius: 2rem;
+  }
+  
+  .logo {
+    position: absolute;
+    top: -45px;
+    padding-left: 2px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    div.logo {
+      display: none;
+    }
+  }
+  
+  .p-logo {
+    font-family: var(--font-h1);
+    text-shadow: 0.1em 0.1em 0.15em var(--text-alt);
+    font-size: 2.5em;
+  }
+  
+  .menu a {
+    color: var(--text);
+    text-shadow: 0.1em 0.1em 0.15em var(--text-alt);
+  }
+  
+  .menu a:hover {
+    color: var(--text-alt);
+    text-shadow: 0.1em 0.1em 0.15em var(--text);
+  }
+  
+  .menu {
+    font-size: 2rem;
+    text-align: right;
+    overflow: hidden;
+    border-radius: 2rem;
+    padding-right: 8px;
+    margin: 2px;
+    padding: 4px;
+    right: 6px;
+    top: -45px;
+  }
+  
+  
+  .about {
+    color: var(--text);
+    text-align: center;
+    padding-top: 5rem;
+    height: 37rem;
+  }
+  
+  .projects {
+    font-family: var(--font-main);
+    color: var(--text);
+    text-align: center;
+    height: 37rem;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 0.5rem;
+    max-width: 100%;
+    max-height: 12rem;
+    padding: 1rem;
+  }
+  
+  .projects img {
+    width: 100%;
+    max-height: 12rem;
+  }
+  
+  .projects a img:hover {
+    background-color: #0808084b;
+    color: #0808084b;
+  }
+  
+  .projects a {
+    text-align: center;
+    background-color: var(--background-alt);
+    color: var(--text);
+    transition: color 0.3s ease-out;
+  }
+  
+  .projects a:hover {
+    color: #0808084b;
+  }
+  
+  .media-links a {
+    text-shadow: 0.1em 0.1em 0.15em var(--text-alt);
+  }
+  
+  .media-links a:hover {
+    text-shadow: 0.1em 0.1em 0.15em var(--primary);
+  }
+  
+  .media-links h1 {
+    margin-top: 1rem;
+  }
+  
+  .media-links {
+    font-size: 4rem;
+    text-align: center;
+    color: var(--text);
+    min-height: 35rem;
+    max-width: 100%;
+    max-height: 35rem;
+  }
+  
+  .fa-twitch {
+    color: #6441a5;
+  }
+  
+  .fa-discord {
+    color: #7289da;
+  }
+  
+  .fa-youtube {
+    color: #ff0000;
+  }
+  
+  .fa-twitter {
+    color: #00aced;
+  }
+  
+  .email {
+    text-align: center;
+    color: var(--background-alt);
+    min-height: 27rem;
+  }
+  
+  .email { 
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  
+  .email form {
+    color: var(--background);
+  }
+  
+  .email label {
+    color: var(--background-alt);
+    text-align: center;
+  }
+  
+  .email-input {
+    background-color: var(--background-alt);
+    color: var(--text);
+  }
+  
+  .email textarea {
+    text-align: center;
+    background-color: var(--background-alt);
+    color: var(--text);
+  }
+  
+  input, textarea {
+    border-color: var(--primary);
+  }
+  
+  .button {
+    border-radius: 2rem;
+    background-color: var(--primary);
+    padding: 0.25rem;
+  }
+  
+  .credits {
+    color: var(--complement);
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 4rem;
+  }
