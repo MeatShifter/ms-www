@@ -1,0 +1,41 @@
+.fa-twitch {
+   color: #6441a5;
+  }
+  
+  .fa-discord {
+    color: #7289da;
+  }
+  
+  .fa-youtube {
+    color: #ff0000;
+  }
+  
+  .fa-twitter {
+    color: #00aced;
+  }
+
+
+
+
+  
+  .media-links a {
+    text-shadow: 0.1em 0.1em 0.15em var(--text-alt);
+  }
+  
+  .media-links a:hover {
+    text-shadow: 0.1em 0.1em 0.15em var(--primary);
+  }
+  
+  .media-links h1 {
+    margin-top: 1rem;
+  }
+  
+  .media-links {
+    font-size: 4rem;
+    text-align: center;
+    color: var(--text);
+    min-height: 35rem;
+    max-width: 100%;
+    max-height: 35rem;
+  }
+   
