@@ -1,3 +1,14 @@
+.banner {
+    position: fixed;
+    font-family: var(--font-menu);
+    background-color: var(--primary);
+    color:  var(--text);
+    width: 100%;
+    max-height: 25px;
+    top: 0;
+    left: 0;
+  }
+
 .logo {
     position: relative;
     top: -20px;
