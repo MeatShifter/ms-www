@@ -1,3 +1,24 @@
+.media-links a {
+  text-shadow: 0.1em 0.1em 0.15em var(--text-alt);
+}
+
+.media-links a:hover {
+  text-shadow: 0.1em 0.1em 0.15em var(--primary);
+}
+
+.media-links h1 {
+  margin-top: 1rem;
+}
+
+.media-links {
+  font-size: 4rem;
+  text-align: center;
+  color: var(--text);
+  min-height: 35rem;
+  max-width: 100%;
+  max-height: 35rem;
+}
+
 .fa-twitch {
    color: #6441a5;
   }
@@ -14,28 +35,10 @@
     color: #00aced;
   }
 
+  .fa-facebook {
+    color: #0018ed;
+  }
 
-
-
-  
-  .media-links a {
-    text-shadow: 0.1em 0.1em 0.15em var(--text-alt);
+  .fa-twitter {
+    color: #ed4b00d8;
   }
-  
-  .media-links a:hover {
-    text-shadow: 0.1em 0.1em 0.15em var(--primary);
-  }
-  
-  .media-links h1 {
-    margin-top: 1rem;
-  }
-  
-  .media-links {
-    font-size: 4rem;
-    text-align: center;
-    color: var(--text);
-    min-height: 35rem;
-    max-width: 100%;
-    max-height: 35rem;
-  }
-   
