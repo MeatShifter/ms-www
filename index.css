@@ -1,0 +1,137 @@
+/* Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Root Vars */
+:root {
+    /* define fonts */
+    --font-menu: 'Permanent Marker', 'Orbitron', 'Font Awesome Brands', sans-serif;
+    --font: 'Roboto', 'Orbitron', 'Terminus', 'Font Awesome Brands', sans-serif;
+    --font-h1: 'Permanent Marker', 'Terminus', 'hack-subset', 'Font Awesome Brands', sans-serif;
+    --font-code: 'Orbitron', 'Terminus', 'Hack', 'hack-subset', 'Font Awesome Brands', 'monospace';
+
+    /* define colors */
+    --text: #e5dfdd;
+    --text-alt: #181616;
+
+    /* CSS HEX */
+    --error: #ef476fff;
+    --code: #ffd166ff;
+    --bg-alt: #06d6a0ff;
+    --main: #118ab2ff;
+    --bg: #073b4cff;
+
+    /* CSS HSL 
+    --error-grad: hsla(346, 84%, 61%, 1);
+    --code--grad: hsla(42, 100%, 70%, 1);
+    --bg-alt-grad:hsla(164, 95%, 43%, 1);
+    --main-grad:  hsla(195, 83%, 38%, 1);
+    --bg-grad:    hsla(195, 83%, 16%, 1);
+    */
+
+}
+
+#home {
+    justify-content: center;
+    font-family: var(--font);
+    color: var(--text);
+    background: var(--bg);
+}
+
+.body {}
+
+.header {}
+
+.logo {}
+
+.menu {
+    text-align: center;
+    font-family: var(--font-menu);
+    border-radius: 0.2rem;
+    background: var(--main);
+    color: var(--bg);
+    width: 100%;
+    height: 25%;
+}
+
+.nav {}
+
+.main {}
+
+.projects {}
+
+.social {}
+
+.footer {
+    background: var(--bg-alt);
+    height: 25%;
+    width: 100%;
+}
+
+.container {}
+
+.scrollbar {}
+
+code {
+    border-radius: 0.2rem;
+    padding: 0 0.2rem;
+    font-family: var(--code);
+    color: var(--text-alt);
+    background-color: var(--bg-alt);
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
+}
+
+/*
+Media Queries 
+    Note: The best way to structure the use of media queries is to create the queries
+        near the relevant code. For example, if you wanted to change the styles for buttons
+        on small devices, paste the mobile query code up in the buttons section and style it
+        there.
+*/
+
+/* Larger than mobile */
+@media(min-width: 400px) {
+    html {
+        width: 100%;
+    }
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media(min-width: 550px) {
+    html {
+        width: 100%;
+    }
+}
+
+/* Larger than tablet */
+@media(min-width: 750px) {
+    html {
+        width: 100%;
+    }
+}
+
+/* Larger than desktop */
+@media(min-width: 1000px) {
+    html {
+        width: 100%;
+    }
+}
+
+/* Larger than Desktop HD */
+@media(min-width: 1200px) {
+    html {
+        width: 100%;
+    }
+}
+
+/* Clearing & reset */
+.container:after,
+.row:after,
+.u-cf {
+    content: "";
+    display: table;
+    clear: both;
+}

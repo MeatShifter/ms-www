@@ -1,107 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html id="home" class="home" class="scrollbar" lang="EN">
 
-    <head>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <title>MeatShifter</title>
+</head>
 
-        <!-- Basic Page Needs
-                                                          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <meta charset="utf-8">
-        <title>MagikPuddle</title>
-        <meta name="description" content="Content Creator">
-        <meta
-        name="author" content="MeatShifter">
+<body id="body" class="body">
+  <header id="header" class="header">
+    <div class="menu" id="menu" class="nav">
+      <a class="menu" href="#home"><i class="fas fa-igloo"></i>Home</a>
+      <a class="menu" href="https://github.com/MeatShifter"><i class="fab fa-github-alt"></i>GitHub</a>
+      <a class="menu" href="https://github.com/users/MeatShifter/projects/1"><i
+          class="fab fa-app-store-ios"></i>Projects</a>
+      <a class="menu" href="#projects"><i class="fab fa-app-store-ios"></i>Apps</a>
+      <a class="menu" href="#social"><i class="fab fab-social"></i>Social</a>
+    </div>
+    <div class="logo">
+      <p id="logo" class="logo"></p>
+    </div>
+  </header>
 
-        <!-- Mobile Specific Metas
-                                                          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <meta
-        name="viewport" content="width=device-width, initial-scale=1">
+  <main id="main" class="main" class="container">
+    <h1>MeatShifter</h1>
+    <p>MeatShifter's Portfolio</p>
+    <code>$sample code</code>
+  </main>
 
-        <!-- FONT
-                                                          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Source+Sans+Pro&display=swap" rel="stylesheet">
-        <!-- <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> -->
+  <projects id="projects" class="projects">
+    <div class="projects"></div>
+  </projects>
 
+  <social id="social" class="social">
+    <div class="social"></div>
+  </social>
 
-        <!-- CSS
-                                                          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/skeleton.css">
-        <link rel="stylesheet" href="css/social-icons.css">
-        <link rel="stylesheet" href="css/menu.css">
-        <link rel="stylesheet" href="css/MagikPuddle.css">
+  <footer id="footer" class="footer">
+    <div class="footer"></div>
+  </footer>
 
-
-        <!-- Favicon
-                                                          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <link rel="icon" type="image/png" href="images/favicon.png">
-
-    </head>
-
-    <body>
-        <header>
-            <div class="banner">
-                <div class="menu" id="menu">
-                    <a class="menu" href="#home">
-                        <i class="fas fa-igloo"></i>
-                    </a>
-                    <a class="menu" href="https://github.com/MeatShifter/magikpuddle" target="blank">
-                        <i class="fab fa-github-alt"></i>
-                    </a>
-                    <a class="menu" href="#projects">
-                        <i class="fab fa-app-store-ios"></i>
-                    </a>
-                    <a class="menu" href="https://github.com/MeatShifter/magikpuddle/wiki" target="blank">
-                        <i class="fab fa-wikipedia-w"></i>
-                    </a>
-                    <a class="menu" href="media.html">
-                        <i class="fas fa-photo-video"></i>
-                    </a>
-                    <a class="menu" href="#contact">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-                <div class="logo">
-                    <p class="p-logo">
-                        <p>MagikPuddle</p>
-                    </p>
-                </div>
-            </div>
-        </header>
-
-        <!-- Primary Page Layout
-                                                          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <div class="container">
-            <div class="row">
-                <div class="one-half column" style="margin-top: 25%">
-                    <h4>MeatShifter</h4>
-                    <p>Thank you for stopping by to check out my work. If you have any questions or comments please dont
-                                                hesitate to reach out to us on any of our platforms<a href="media.html">
-                            here.</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Scripts 
-                                                          -------------------------------------------------- -->
-        <script src="js/MagikPuddle.js"></script>
-        <script src="https://kit.fontawesome.com/84000ae34f.js" crossorigin="anonymous"></script>
-
-        <!-- Netlify Search -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css"/>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
-        <script type="text/javascript">
-            algoliasearchNetlify({
-                appId: 'IDVDKVVKPG',
-                apiKey: '<YOUR_ALGOLIA_SEARCH_API_KEY>',
-                siteId: 'd8ab5e0a-1a56-4df3-8fa3-32d40aad2d55',
-                branch: 'main',
-                selector: 'div#search'
-            });
-        </script>
-
-        <!-- End Document
-                                                          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    </body>
+</body>
+<!--
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+-->
 
 </html>
